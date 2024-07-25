@@ -6,6 +6,7 @@
     <title>EBAC Talks</title>
     <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -13,7 +14,7 @@
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -27,7 +28,7 @@
                     </li>
                     <li class="infos-bar__infos__item">
                         <b>Quando</b>
-                        12/12/2024 às 19hrs
+                        Dec 12 de 2024 às 19hrs
                     </li>
                 </ul>
                 <a href="#" class="button button--primary">
@@ -37,8 +38,8 @@
         </div>
     </header>
 
-    <section class="event">
-        <div class="container">
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
             <div class="event__details">
                 <h2 class="event__details__title">Front-end</h2>
                 <p class="event__details__description">
@@ -48,7 +49,41 @@
             <img class="event__image" src="./images/frontend.png" alt="Homen olhando a tela do computador">
         </div>
     </section>
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non facere ad, tempore, ab maxime veniam in, aperiam quaerat porro ut iure. Quam aspernatur tempore adipisci asperiores facilis numquam possimus! Nulla?
+                </p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="Homen olhando a tela do computador">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non facere ad, tempore, ab maxime veniam in, aperiam quaerat porro ut iure. Quam aspernatur tempore adipisci asperiores facilis numquam possimus! Nulla?
+                </p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="Homen olhando a tela do computador">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-end</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non facere ad, tempore, ab maxime veniam in, aperiam quaerat porro ut iure. Quam aspernatur tempore adipisci asperiores facilis numquam possimus! Nulla?
+                </p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="Homen olhando a tela do computador">
+        </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>

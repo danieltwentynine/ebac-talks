@@ -1,10 +1,12 @@
+@use '../var';
+
 .infos-bar {
-    background-color: #fff;
+    background-color: var.$textColor;
     padding: 16px 24px;
     display: flex;
     justify-content: space-between;
     border-radius: 4px;
-    border: 1px solid #fff;
+    border: 1px solid var.$textColor;
 
     &__infos {
         display: flex;
@@ -12,12 +14,12 @@
 
         &__item {
             font-size: 14px;
-            color: #000;
+            color: var.$secTextColor;
 
             b {
                 font-size: 18px;
                 display: block;
-                color: #000;
+                color: var.$secTextColor;
             }
         }
     }
