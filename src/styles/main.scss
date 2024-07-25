@@ -1,4 +1,7 @@
 @use 'hero';
+@use 'event';
+@use 'components/infos_bar';
+@use 'components/buttons';
 
 * {
     box-sizing: border-box;
